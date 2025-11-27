@@ -17,7 +17,7 @@ class Fizzy::Saas::SignupTest < ActiveSupport::TestCase
       assert signup.complete
 
       assert signup.account
-      assert_equal "123456", signup.account.external_account_id.to_s
+      assert_equal 123456, signup.account.external_account_id
     end
   end
 
